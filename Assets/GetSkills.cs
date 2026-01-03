@@ -22,6 +22,7 @@ public class GetSkills : MonoBehaviour
             }
             sv.reload();
             gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

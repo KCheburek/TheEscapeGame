@@ -116,12 +116,12 @@ public class MainLogic : MonoBehaviour
         Movement.startPosX = benches[sv.LastBenchID][0];
         Movement.startPosY = benches[sv.LastBenchID][1];
         sv.loadSavesEnforced();
-        SceneManager.LoadScene("lvl" + sv.getCurrentSaveId());
+        SceneManager.LoadScene("lvl" + benches[2]);
 
     }
     public void launchSave(string id){
-        sv.loadSavesEnforced();
         sv.setSaveID(id);
+        sv.loadSavesEnforced();
         int lastbenchid = sv.getIntSave("LastBenchID");
         if(lastbenchid<0) lastbenchid = 0;
         Debug.Log(lastbenchid + "lastbenchid");

@@ -229,6 +229,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LogicPACK
       objectReference: {fileID: 0}
+    - target: {fileID: 3911796588946768769, guid: e781725d81ae43147a71620cdd2114a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911796588946768769, guid: e781725d81ae43147a71620cdd2114a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.43
+      objectReference: {fileID: 0}
     - target: {fileID: 6060139883771123773, guid: e781725d81ae43147a71620cdd2114a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

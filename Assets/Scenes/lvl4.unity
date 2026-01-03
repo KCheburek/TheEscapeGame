@@ -190,11 +190,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3911796588946768769, guid: e781725d81ae43147a71620cdd2114a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.13
+      value: 20.46
       objectReference: {fileID: 0}
     - target: {fileID: 3911796588946768769, guid: e781725d81ae43147a71620cdd2114a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.53
+      value: -4.44
       objectReference: {fileID: 0}
     - target: {fileID: 6060139883771123773, guid: e781725d81ae43147a71620cdd2114a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4032,12 +4032,16 @@ PrefabInstance:
       value: LevelTransition (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5505045313106028857, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.3922524
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505045313106028857, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.634228
+      value: 21.68
       objectReference: {fileID: 0}
     - target: {fileID: 5505045313106028857, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.484026
+      value: -3.5537
       objectReference: {fileID: 0}
     - target: {fileID: 5505045313106028857, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4070,6 +4074,18 @@ PrefabInstance:
     - target: {fileID: 5505045313106028857, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100144532405904603, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
+      propertyPath: posx
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100144532405904603, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
+      propertyPath: posy
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100144532405904603, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
+      propertyPath: sceneName
+      value: lvl5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

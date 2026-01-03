@@ -33,7 +33,10 @@ public class chestController : MonoBehaviour
                if(sv.HitUnlocked == 1)
                 {
 
-                    getSkill.SetActive(false);
+                    if(getSkill != null)
+        {
+            getSkill.SetActive(false);
+        }
                 } else
                 {
                     Open();
@@ -46,6 +49,10 @@ public class chestController : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         Debug.Log("Setting Active");
-        getSkill.SetActive(true);
+        if(getSkill != null)
+        {
+            getSkill.SetActive(true);
+        }
+        
     }
 }

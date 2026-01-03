@@ -9,7 +9,7 @@ public class Saves : MonoBehaviour
     public int AirJumpUnlocked;
     public int DashUnlocked;
     public int LastBenchID = 0; //default
-    private string curentSaveID = "0";
+    public string curentSaveID = "0";
     public string lvlTime;
 
     private Dictionary<string, int[]> wallBreaks = new Dictionary<string, int[]>();
@@ -38,11 +38,10 @@ public class Saves : MonoBehaviour
         loadSaves();
     }
 
-    // Example: Add known walls here
     private void InitializeWallBreaks()
     {
-        // Replace this with actual wall IDs from your game
-        for (int id = 0; id <= 10; id++) // assuming 100 walls max
+
+        for (int id = 0; id <= 10; id++) 
         {
             addNewWall(id);
         }
