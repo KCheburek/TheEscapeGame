@@ -7,11 +7,6 @@ public class GetSkills : MonoBehaviour
     public int Air_AirJump__Hit_HittingAbility__Wall_WallJUMP__Dash_Dashing;
     void Start(){
         sv = FindObjectOfType<Saves>();
-        if(sv.HitUnlocked == 1){
-            gameObject.SetActive(false);
-        } else {
-            gameObject.SetActive(true);
-        }
     }
     void OnTriggerEnter2D(Collider2D collider){
         if(collider.gameObject.CompareTag("Player")){
@@ -26,6 +21,7 @@ public class GetSkills : MonoBehaviour
                 sv.DashUnlocked = 1;
             }
             sv.reload();
+            gameObject.SetActive(false);
         }
     }
 }

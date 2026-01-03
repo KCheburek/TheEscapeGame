@@ -58,6 +58,7 @@ public class Movement : MonoBehaviour, Savable
         }
         startPosX = 0;
         startPosY = 0;
+        sv = FindObjectOfType<Saves>();
     }
 
     void Update()
