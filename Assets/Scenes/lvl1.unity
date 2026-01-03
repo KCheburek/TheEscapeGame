@@ -1268,7 +1268,7 @@ Transform:
   m_GameObject: {fileID: 375517858}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.217218, y: 16.510555, z: 0}
+  m_LocalPosition: {x: 14.217218, y: 16.464, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4318,7 +4318,7 @@ Transform:
   m_GameObject: {fileID: 1117469301}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.7559814, y: 12.574772, z: 0}
+  m_LocalPosition: {x: 6.7559814, y: 12.483, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5872,11 +5872,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3911796588946768769, guid: e781725d81ae43147a71620cdd2114a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.63
+      value: -31.538883
       objectReference: {fileID: 0}
     - target: {fileID: 3911796588946768769, guid: e781725d81ae43147a71620cdd2114a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.98
+      value: 1.6275095
       objectReference: {fileID: 0}
     - target: {fileID: 4619388984205765881, guid: e781725d81ae43147a71620cdd2114a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8319,7 +8319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5505045313106028857, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -32.76
+      value: -33.21
       objectReference: {fileID: 0}
     - target: {fileID: 5505045313106028857, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8359,7 +8359,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7100144532405904603, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
       propertyPath: posx
-      value: 30.8
+      value: 88
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100144532405904603, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
+      propertyPath: posy
+      value: -21.4
       objectReference: {fileID: 0}
     - target: {fileID: 7100144532405904603, guid: 8a6a7c329bf9b5f4891bd503122dbff6, type: 3}
       propertyPath: sceneName
@@ -8770,7 +8774,7 @@ GameObject:
   - component: {fileID: 2144170218}
   m_Layer: 0
   m_Name: ground
-  m_TagString: Untagged
+  m_TagString: jumpable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
