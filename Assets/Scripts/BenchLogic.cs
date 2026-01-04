@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BenchLogic : MonoBehaviour
 {
-    private int benchID = 0;
+    public int benchID = 0;
     public Saves sv;
     void Awake(){
         sv = FindObjectOfType<Saves>();

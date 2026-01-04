@@ -57,7 +57,8 @@ public class MainLogic : MonoBehaviour
     }
     private void fillBenches(){
         benches[0] = new float[]{0, -2.4f, 0};
-        benches[1] = new float[]{3, 3.5f, 4}; //x y lvl
+        benches[1] = new float[]{-3, -4.4f, 4};
+        benches[2] = new float[]{90.7f, 16.5f, 7}; //x y lvl
     }
     public void refreshKeyBinds()
     {
@@ -116,7 +117,7 @@ public class MainLogic : MonoBehaviour
         Movement.startPosX = benches[sv.LastBenchID][0];
         Movement.startPosY = benches[sv.LastBenchID][1];
         sv.loadSavesEnforced();
-        SceneManager.LoadScene("lvl" + benches[2]);
+        SceneManager.LoadScene("lvl" + benches[sv.LastBenchID][2]);
 
     }
     public void launchSave(string id){

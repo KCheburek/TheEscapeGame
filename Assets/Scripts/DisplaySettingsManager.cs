@@ -81,6 +81,22 @@ public class DisplaySettingsManager : MonoBehaviour
         {
             pptoggle.isOn = false;
         }
+        if(sv.getFPS() == -1) fpstext.text = "Unlimited";
+        else 
+        fpstext.text = sv.getFPS().ToString();
+        rstext.text = (sv.getRScale()*0.15f+0.7f).ToString();
+        switch (sv.getQlvl())
+        {
+            case 0:
+                qltext.text = "LOW";
+            break;
+            case 1:
+                qltext.text = "MEDIUM";
+            break;
+            case 2:
+                qltext.text = "HIGH";
+            break;
+        }
 
     }
     

@@ -92,6 +92,11 @@ public class ServerRoomsController : MonoBehaviour
     public void joinByAddress(){
         //join
         addressPanel.SetActive(false);
-        w.joinAddress(address.text);
+        string t = address.text;
+        if(t.Length <  2|| t.Length > 40)
+        {
+            t = "Random"+Random.Range(1, 1000);
+        }
+        w.joinAddress(t);
     }
 }

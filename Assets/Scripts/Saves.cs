@@ -9,7 +9,7 @@ public class Saves : MonoBehaviour
     public int AirJumpUnlocked;
     public int DashUnlocked;
     public int LastBenchID = 0; //default
-    public string curentSaveID = "0";
+    public string curentSaveID = "9";
     public string lvlTime;
 
     private Dictionary<string, int[]> wallBreaks = new Dictionary<string, int[]>();
@@ -30,7 +30,7 @@ public class Saves : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
+        PlayerPrefs.SetInt("0HitUnlocked", 1);
         // Rebuild wallBreaks first if needed (add known wall IDs here)
         InitializeWallBreaks();
         // Load all saves
@@ -322,7 +322,41 @@ public class Saves : MonoBehaviour
     }
     public string getKeyBind(string name)
     {
-        return PlayerPrefs.GetString(name, "-");
+        string toReturn = PlayerPrefs.GetString(name, "-");
+        if(toReturn == "-")
+        {
+            switch (name)
+            {
+                case "DOWNKEY":
+                return "S";
+                break;
+                case "LEFTKEY":
+                return "A";
+                break;
+                case "RIGHTKEY":
+                return "D";
+                break;
+                case "JUMPKEY":
+                return "Space";
+                break;
+                case "HITKEY":
+                return "Mouse0";
+                break;
+                case "DASHKEY":
+                return "Mouse1";
+                break;
+                case "PAUSEKEY":
+                return "Escape";
+                break;
+                case "PLAYERSKEY":
+                return "Tab";
+                
+            }
+            return "A"; //idk hope it will never get to this
+        } else
+        {
+            return toReturn;
+        }
     }
     public void saveServerAddress(string addr)
     {

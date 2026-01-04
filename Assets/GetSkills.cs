@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class GetSkills : MonoBehaviour
 {
+
+    public GameObject notificaiton;
     private Saves sv;
     public string skill;
     public int Air_AirJump__Hit_HittingAbility__Wall_WallJUMP__Dash_Dashing;
@@ -22,6 +24,7 @@ public class GetSkills : MonoBehaviour
             }
             sv.reload();
             gameObject.SetActive(false);
+            notificaiton.SetActive(true);
             Destroy(gameObject);
         }
     }

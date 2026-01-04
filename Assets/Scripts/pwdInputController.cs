@@ -16,7 +16,12 @@ public class pwdInputController : MonoBehaviour
     }
 
     public void sendPwd(){
-        w.joinByAddress(id, pwd.text);
+        string t = pwd.text;
+        if(t.Length <  2|| t.Length > 12)
+        {
+            t = "Random"+Random.Range(1, 1000);
+        }
+        w.joinByAddress(id, t);
         gameObject.SetActive(false);
     }
 

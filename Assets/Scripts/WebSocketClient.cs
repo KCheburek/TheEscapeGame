@@ -304,7 +304,12 @@ public void reAssignFields(){
     }
     public void onNickEdited(){
         sv.saveNick(nickInput.text);
-        nick.text = nickInput.text;
+        string t = nickInput.text;
+        if(t.Length < 2 || t.Length > 12)
+        {
+            t = "Random"+Random.Range(1, 1000);
+        }
+        nick.text = t;
         nicknamepanel.SetActive(false);
         WebSocketClient.instance.ws.SendText(showName());
     }

@@ -43,6 +43,20 @@ public class chestController : MonoBehaviour
                     StartCoroutine(chestdelay());
                 }
             }
+            if(skill == "Wall")
+            {
+                if(sv.WallJumpUnlocked == 1)
+                {
+                    if(getSkill != null)
+                    {
+                        getSkill.SetActive(false);
+                    }
+                } else
+                {
+                    Open();
+                    StartCoroutine(chestdelay());
+                }
+            }
         }
     }
     IEnumerator chestdelay()
